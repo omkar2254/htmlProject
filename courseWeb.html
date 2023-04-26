@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Software Development Courses</title>
+	<!-- Add any CSS stylesheets or JavaScript files here -->
+    <style>
+        body {
+			font-family: Arial, sans-serif;
+			background-color: #f7f7f7;
+			margin: 0;
+			padding: 0;
+		}
+		
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 10px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			z-index: 999;
+		}
+		
+		header nav ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+		}
+		
+		header nav ul li {
+			margin-right: 20px;
+		}
+		
+		header nav ul li a {
+			color: #fff;
+			text-decoration: none;
+			font-size: 18px;
+			padding: 10px;
+			transition: all 0.3s ease-in-out;
+		}
+		
+		header nav ul li a:hover {
+			background-color: #fff;
+			color: #333;
+			border-radius: 5px;
+		}
+		
+		main {
+			margin-top: 100px;
+			padding: 20px;
+		}
+		
+		section {
+			margin-bottom: 50px;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			border-radius: 5px;
+		}
+		
+		h1, h2, h3 {
+			margin-top: 0;
+		}
+		
+		h1 {
+			font-size: 36px;
+			text-align: center;
+			margin-bottom: 30px;
+		}
+		
+		h2 {
+			font-size: 28px;
+			margin-bottom: 20px;
+		}
+		
+		h3 {
+			font-size: 24px;
+			margin-bottom: 10px;
+		}
+		
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+		
+		ul {
+			margin-left: 20px;
+			list-style: disc;
+		}
+		
+		form label {
+			display: block;
+			margin-bottom: 10px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+		
+		form input[type="text"],
+		form input[type="email"],
+		form textarea {
+			display: block;
+			width: 100%;
+			padding: 10px;
+			font-size: 18px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 20px;
+		}
+		
+		form input[type="submit"] {
+			background-color: #333;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			font-size: 18px;
+			border-radius: 5px;
+			cursor: pointer;
+			transition: all 0.3s ease-in-out;
+		}
+    </style>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#courses">Courses</a></li>
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<section id="home">
+			<h1>Welcome to our Software Development Courses Website</h1>
+			<p>Here you can find information about our courses, as well as how to enroll and start learning today!</p>
+			<a href="#courses" class="button">Explore Courses</a>
+		</section>
+		
+		<section id="courses">
+			<h2>Our Courses</h2>
+			<ul>
+				<li>
+					<h3>Intro to Programming</h3>
+					<p>This course covers the basics of programming using Python, including variables, data types, loops, and functions.</p>
+					<a href="#enroll" class="button">Enroll Now</a>
+				</li>
+				<li>
+					<h3>Web Development</h3>
+					<p>This course covers HTML, CSS, and JavaScript, as well as popular web development frameworks like React and Angular.</p>
+					<a href="#enroll" class="button">Enroll Now</a>
+				</li>
+				<li>
+					<h3>Data Science</h3>
+					<p>This course covers data analysis using Python and R, as well as machine learning algorithms and tools like TensorFlow and Keras.</p>
+					<a href="#enroll" class="button">Enroll Now</a>
+				</li>
+			</ul>
+			<a href="#enroll" class="button">View All Courses</a>
+		</section>
+		
+		<section id="about">
+			<h2>About Us</h2>
+			<p>We are a team of experienced software developers who are passionate about sharing our knowledge and helping others learn to code. Our courses are designed to be accessible to students of all skill levels, from beginners to advanced programmers.</p>
+		</section>
+		
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name"><br>
+				
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email"><br>
+				
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea><br>
+				
+				<input type="submit" value="Submit">
+			</form>
+		</section>
+	</main>
+	
+	<footer>
+		<p>Copyright © 
+			<script>
+				document.write(new Date().getFullYear());
+			</script> 
+			Software Development Courses. All rights reserved.</p>
+	</footer>
+	
+</body>
+</html>
